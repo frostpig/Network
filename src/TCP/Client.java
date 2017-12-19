@@ -37,6 +37,12 @@ public class Client {
                     System.out.println(echo);
                 }
             }
+            input.close();
+            if (client != null){
+                //如果构造函数建立起了连接，则关闭套接字，如果没有建立起连接，不关闭
+                client.close();  //只关闭socket,其关联的输入输出流也会被关闭
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

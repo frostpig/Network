@@ -21,6 +21,8 @@ public class Server {
                 //为每个客户端连接开启一个线程
                 new Thread(new ServerThread(client)).start();
             }
+            serverSocket.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
