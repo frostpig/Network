@@ -46,15 +46,5 @@ public class Client {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //获取键盘输入
-
-        //获取socket的输出流，用来发送数据到服务器
-
-        //获取socket的输入流，用来接收从服务端发送过来的数据
-
-        //发送数据到服务器
-
-        //从服务端接收数据有个时间限制（系统自设，也可以自己设置）
     }
 }
